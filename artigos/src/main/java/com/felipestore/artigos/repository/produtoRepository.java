@@ -1,5 +1,9 @@
 package com.felipestore.artigos.repository;
 
-public interface produtoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.felipestore.artigos.model.Produtos;
+
+public interface produtoRepository extends JpaRepository<Produtos, Integer>{
 
 }
